@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>XV AÑOS VANESSA</title>
+  <!--ICONO-->
+  <link rel="icon" type="image/x-icon" href="../invitación/assets/img/flower3.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-black text-center">
+          <h1 class="mx-auto my-0">Mis XV</h1>
+          <h1 class="mx-auto my-0 text-uppercase">VANESSA</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            — Sábado 04 Noviembre 2023 —
+          </h2>
+          <!--contador-->
+          <section>
+            <div class="text-white-50" id="countdown"></div>
+            <script>
+              var end = new Date("11/04/23 9:30 AM");
+
+              var _second = 1000;
+              var _minute = _second * 60;
+              var _hour = _minute * 60;
+              var _day = _hour * 24;
+              var timer;
+
+              function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+                  clearInterval(timer);
+                  document.getElementById("countdown").innerHTML = "EXPIRED!";
+
+                  return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+                document.getElementById("countdown").innerHTML =
+                  days + " Días | ";
+                document.getElementById("countdown").innerHTML +=
+                  hours + " Horas | ";
+                document.getElementById("countdown").innerHTML +=
+                  minutes + " Minutos  ";
+                /*document.getElementById("countdown").innerHTML +=
+                  seconds + " Segundos  ";*/
+              }
+
+              timer = setInterval(showRemaining, 1);
+            </script>
+          </section>
+          <!-- fin de contador-->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- second page-->
+  <section class="about-section text-center" id="about">
+    <h2 class="text-white mb-4 col-lg-12">
+      Hay momentos inolvidables que se atesoran en el corazón <br />
+      para siempre, por esta razón, quiero que compartas <br />
+      conmigo este día tan especial.
+    </h2>
+
+    <h3 class="text-center col 6 text-white-50">En compañia de :</h3>
+    <p class="text-white-50 col-5">
+      Mis padres<br /><br />
+      Sandy Juárez Torres <br /> & <br />
+      Arnulfo Martínez Torres
+    </p>
+    <p class="text-white-50 col-6">
+
+      Mis padrinos<br /><br />Blanca Martínez Torres<br /> &
+      <br />Armando Martínez Martínez
+    </p>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section bg-light" id="projec ts">
+    <h1 class=" text-center text-white-50">Ceremonia Religiosa</h1>
+    <!-- Projects ceremonia-->
+    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+
+        <p class="text-white text-center">
+          Parroquia Jesucristo Sumo <br />
+          y Eterno Sacerdote <br />
+          "Iglesia de la estrella" <br />
+          7:00 P.M.
+        </p>
+
+
+        <p class="text-white text-center">
+        </p>
+
+
+
+      </div>
+      <div class="col-lg-3"> </div>
+      <div class="col-lg-3"> </div>
+      <div class="col-lg-6">
+        <div class="bg-green text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-white">
+                <img src="assets/img/iglesia.jpg" alt="iglesia.jpg" width="250" height="200">
+              </h4>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Abrir mapa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3"> </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ceremonia Religiosa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7391.232055759112!2d-100.934264!3d22.140611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa3ccfdb289d1%3A0xc2b9b748324e9677!2sParroquia%20Jesucristo%20Sumo%20y%20Eterno%20Sacerdote%20%22iglesia%20de%20la%20estrella%22!5e0!3m2!1ses-419!2smx!4v1694051297603!5m2!1ses-419!2smx"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Project Two Row-->
+  <section class="projects-section bg-light" id="projects">
+    <h1 class=" text-center text-white-50">Recepción</h1>
+    <div class="container px-4 px-lg-5">
+      <!-- Projects recepción-->
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-6">
+          <p class="text-white text-center">
+            Salón "La cabaña del Río" <br />
+            8:00 P.M.
+
+          </p>
+        </div>
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-3"> </div>
+        <div class="col-lg-6">
+          <div class="bg-green text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">
+                  <img class="align-items-center" src="assets/img/salon.jpg" alt="salon.jpg" width="250" height="200">
+                </h4>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  Abrir mapa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3"> </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Recepción</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d461.9100644645016!2d-100.9327771!3d22.1533917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5587601d2b%3A0x778051ef109e197!2sSal%C3%B3n%20De%20Eventos%20La%20Caba%C3%B1a%20Del%20R%C3%ADo!5e0!3m2!1ses-419!2smx!4v1694232614923!5m2!1ses-419!2smx"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DRESS CODE-->
+  <section class="dress-code" id="dress">
+    <h1 class=" text-center">Código de vestimenta</h1>
+    <p class="text-center">El color verde esmeralda está reservado para la festejada</p>
+    <!--slider-->
+    <h1 class="text-center">Galería</h1>
+    <div id="carouselExampleControls" class="carousel slide cointainer border" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/fotos_vanesa/vanesa_pasto_enfocada_3.jpeg" class="img-fluid d-block w-100 " height="auto">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/fotos_vanesa/vane_posando_3.jpeg" class="img-fluid d-block w-100" height="auto">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/fotos_vanesa/foto_puente_3.jpeg" class="img-fluid d-block w-100" height="auto">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/fotos_vanesa/vanessa_bambu_3.jpg" class="img-fluid d-block w-100" height="auto">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+</body>
+
+</html>
